@@ -7,11 +7,7 @@ ENV MONGODB_USERNAME cbuelvasc
 ENV MONGODB_PASSWORD qpY4ldN5SGago7sG
 
 WORKDIR /app
-
 COPY package*.json .
-
 RUN npm install
-
 COPY . .
-
 CMD ["npm", "start"]
